@@ -1,0 +1,96 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background-image: url('/images/ceramica-hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+  
+  @media (max-width: 768px) {
+    height: 80vh;
+  }
+  
+  @media (max-width: 480px) {
+    height: 70vh;
+  }
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+}
+
+.content {
+  color: var(--white);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 2;
+  padding: 0 20px;
+
+  h1 {
+    font-size: 128px;
+    line-height: 1.2109999656677246em;
+    margin-bottom: 20px;
+    
+    @media (max-width: 1200px) {
+      font-size: 100px;
+    }
+    
+    @media (max-width: 992px) {
+      font-size: 80px;
+    }
+    
+    @media (max-width: 768px) {
+      font-size: 60px;
+    }
+    
+    @media (max-width: 480px) {
+      font-size: 40px;
+    }
+  }
+
+  p {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 1.2109999656677246em;
+    letter-spacing: 1px;
+    
+    @media (max-width: 1200px) {
+      font-size: 40px;
+    }
+    
+    @media (max-width: 992px) {
+      font-size: 36px;
+    }
+    
+    @media (max-width: 768px) {
+      font-size: 30px;
+    }
+    
+    @media (max-width: 480px) {
+      font-size: 24px;
+    }
+  }
+} 

@@ -1,0 +1,53 @@
+.formGroup {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--light-gray);
+  border-radius: 4px;
+  font-size: 16px;
+  color: var(--text-color);
+  transition: border-color 0.3s ease;
+  
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+  
+  &::placeholder {
+    color: #999;
+  }
+}
+
+.inputError {
+  border-color: #e74c3c !important;
+}
+
+.errorMessage {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
+}
+
+.helperText {
+  color: #666;
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
+} 

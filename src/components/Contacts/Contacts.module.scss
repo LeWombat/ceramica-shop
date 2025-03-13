@@ -1,0 +1,174 @@
+.contactsSection {
+  padding: 100px 0;
+  background-color: var(--background-color);
+  
+  @media (max-width: 768px) {
+    padding: 60px 0;
+  }
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 48px;
+  margin-bottom: 60px;
+  text-align: center;
+  font-weight: 500;
+  
+  @media (max-width: 768px) {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+}
+
+.contactsContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 80px;
+  
+  @media (max-width: 992px) {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+.contactInfo {
+  background-color: var(--white);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  
+  @media (max-width: 576px) {
+    padding: 30px 20px;
+  }
+}
+
+.infoItem {
+  margin-bottom: 30px;
+  
+  h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-family: 'Cormorant Garamond', serif;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 5px;
+  }
+}
+
+.socialLinks {
+  h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-family: 'Cormorant Garamond', serif;
+  }
+}
+
+.socialIcons {
+  display: flex;
+  gap: 15px;
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: var(--text-color);
+  color: var(--white);
+  border-radius: 50%;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    opacity: 0.8;
+    transform: translateY(-3px);
+  }
+}
+
+.contactForm {
+  background-color: var(--white);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  
+  h3 {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-family: 'Cormorant Garamond', serif;
+  }
+  
+  @media (max-width: 576px) {
+    padding: 30px 20px;
+  }
+}
+
+.textareaField {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--light-gray);
+  border-radius: 4px;
+  font-size: 16px;
+  resize: vertical;
+  font-family: inherit;
+  
+  &:focus {
+    outline: none;
+    border-color: var(--accent-color);
+  }
+}
+
+.textareaError {
+  border-color: #e74c3c !important;
+}
+
+.errorMessage {
+  color: #e74c3c;
+  font-size: 14px;
+  margin-top: 5px;
+  display: block;
+}
+
+.formActions {
+  margin-top: 30px;
+}
+
+.map {
+  margin-bottom: 60px;
+  
+  h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-family: 'Cormorant Garamond', serif;
+  }
+  
+  iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+} 

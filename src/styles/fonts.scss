@@ -1,0 +1,43 @@
+/* Подключение шрифта Cormorant Garamond */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('../fonts/CormorantGaramond-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cormorant Garamond';
+  src: url('../fonts/CormorantGaramond-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Подключение шрифта Roboto Flex */
+@font-face {
+  font-family: 'Roboto Flex';
+  src: url('../fonts/RobotoFlex[slnt,wdth,wght,opsz].ttf') format('truetype-variations');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+  font-variation-settings: 'wght' 400;
+}
+
+/* Настройки для различных весов Roboto Flex */
+.font-thin {
+  font-variation-settings: 'wght' 100;
+}
+
+.font-light {
+  font-variation-settings: 'wght' 300;
+}
+
+.font-regular {
+  font-variation-settings: 'wght' 400;
+}
+
+.font-medium {
+  font-variation-settings: 'wght' 500;
+} 

@@ -1,0 +1,31 @@
+// Цвета
+$primary-color: #8B7355;
+$accent-color: #C2AC8D;
+$text-color: #404040;
+$background-color: #E5E0D7;
+$white: #FFFFFF;
+$light-gray: #F5F5F5;
+
+// Переменные для RGB (для использования с rgba)
+$accent-color-rgb: 194, 172, 141;
+
+// Размеры
+$header-height: 100px;
+$container-width: 1440px;
+
+// Брейкпоинты
+$breakpoint-xs: 480px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+
+// Тени
+$box-shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1);
+$box-shadow-md: 0 8px 24px rgba(0, 0, 0, 0.15);
+$box-shadow-lg: 0 12px 30px rgba(0, 0, 0, 0.2);
+
+// Переходы
+$transition-fast: 0.2s ease;
+$transition-normal: 0.3s ease;
+$transition-slow: 0.5s ease; 

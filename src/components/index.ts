@@ -1,0 +1,17 @@
+"use client"
+
+export { Header } from './Header/Header'
+export { Hero } from './Hero/Hero'
+export { About } from './About/About'
+export { Products } from './Products/Products'
+export { NewCollection } from './NewCollection/NewCollection'
+export { Footer } from './Footer/Footer'
+export { Catalog } from './Catalog'
+export { Cart } from './Cart'
+export { ProductDetail } from './ProductDetail'
+export { GiftCards } from './GiftCards'
+export { OrderSuccess } from './OrderSuccess/OrderSuccess'
+export { OrderProcessing } from './OrderProcessing/OrderProcessing'
+export { Checkout } from './Checkout/Checkout'
+export { Contacts } from './Contacts/Contacts'
+export * from './UI' 

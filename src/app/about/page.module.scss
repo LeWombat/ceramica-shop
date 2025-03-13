@@ -1,0 +1,360 @@
+.main {
+  min-height: 100vh;
+  background-color: var(--background-color);
+  padding-top: 110px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  flex: 1;
+}
+
+.aboutSection {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px 20px 100px;
+  
+  @media (max-width: 768px) {
+    padding: 30px 20px 60px;
+  }
+}
+
+.pageTitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 48px;
+  margin-bottom: 60px;
+  text-align: center;
+  font-weight: 500;
+  
+  @media (max-width: 768px) {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+}
+
+.sectionTitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-weight: 500;
+  
+  @media (max-width: 768px) {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+}
+
+// Интро секция
+.aboutIntro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-bottom: 100px;
+  align-items: center;
+  
+  @media (max-width: 992px) {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    margin-bottom: 60px;
+  }
+}
+
+.introText {
+  @media (max-width: 992px) {
+    order: 2;
+  }
+}
+
+.introParagraph {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  
+  @media (max-width: 768px) {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.introImage {
+  @media (max-width: 992px) {
+    order: 1;
+  }
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  }
+}
+
+// Временная шкала
+.timeline {
+  margin-bottom: 100px;
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    left: 80px;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--accent-color) 0%, var(--primary-color) 100%);
+    opacity: 0.5;
+    
+    @media (max-width: 576px) {
+      left: 60px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    margin-bottom: 60px;
+  }
+}
+
+.timelineItem {
+  display: flex;
+  margin-bottom: 40px;
+  position: relative;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: 576px) {
+    margin-bottom: 30px;
+  }
+}
+
+.timelineDate {
+  flex: 0 0 160px;
+  font-size: 28px;
+  font-weight: bold;
+  padding-top: 10px;
+  position: relative;
+  z-index: 1;
+  color: var(--accent-color);
+  
+  &::after {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    box-shadow: 0 0 0 4px rgba(var(--accent-color-rgb), 0.3);
+    z-index: 2;
+  }
+  
+  @media (max-width: 576px) {
+    flex: 0 0 120px;
+    font-size: 24px;
+    
+    &::after {
+      right: 20px;
+    }
+  }
+}
+
+.timelineContent {
+  flex: 1;
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-family: 'Cormorant Garamond', serif;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 576px) {
+    padding: 20px;
+    
+    h3 {
+      font-size: 20px;
+    }
+    
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+// Ценности
+.values {
+  margin-bottom: 100px;
+  
+  @media (max-width: 768px) {
+    margin-bottom: 60px;
+  }
+}
+
+.valuesList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.valueItem {
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: var(--accent-color);
+  }
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-family: 'Cormorant Garamond', serif;
+    color: var(--accent-color);
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  @media (max-width: 768px) {
+    padding: 20px;
+    
+    h3 {
+      font-size: 20px;
+    }
+    
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+// Команда
+.team {
+  margin-bottom: 100px;
+  
+  @media (max-width: 768px) {
+    margin-bottom: 60px;
+  }
+}
+
+.teamList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  
+  @media (max-width: 992px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @media (max-width: 576px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.teamMember {
+  background-color: var(--white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.memberPhoto {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+.memberImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+  
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.memberName {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 20px 20px 5px;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.memberRole {
+  font-size: 16px;
+  color: var(--accent-color);
+  margin: 0 20px 15px;
+  font-weight: 500;
+}
+
+.memberBio {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 20px 20px;
+  
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+} 

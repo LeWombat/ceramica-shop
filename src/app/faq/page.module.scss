@@ -1,0 +1,148 @@
+.main {
+  min-height: 100vh;
+  background-color: var(--background-color);
+  padding-top: 110px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  flex: 1;
+}
+
+.faqSection {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px 20px 100px;
+  
+  @media (max-width: 768px) {
+    padding: 30px 20px 60px;
+  }
+}
+
+.pageTitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 48px;
+  margin-bottom: 60px;
+  text-align: center;
+  font-weight: 500;
+  
+  @media (max-width: 768px) {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+}
+
+.faqList {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.faqItem {
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.faqQuestion {
+  font-size: 24px;
+  padding: 20px 30px;
+  margin: 0;
+  background-color: var(--background-color);
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  border-bottom: 1px solid var(--light-gray);
+  cursor: pointer;
+  
+  @media (max-width: 768px) {
+    font-size: 20px;
+    padding: 15px 20px;
+  }
+}
+
+.faqAnswer {
+  padding: 30px;
+  
+  p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+    
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+  
+  ul, ol {
+    margin-bottom: 20px;
+    padding-left: 30px;
+    
+    li {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 10px;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+      
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
+}
+
+.additionalQuestions {
+  background-color: var(--white);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  
+  h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    
+    @media (max-width: 768px) {
+      font-size: 24px;
+    }
+  }
+  
+  p {
+    font-size: 20px;
+    line-height: 1.6;
+    
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+  
+  a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: 500;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    padding: 20px;
+  }
+} 

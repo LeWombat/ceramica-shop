@@ -1,0 +1,39 @@
+.main {
+  min-height: 100vh;
+  background-color: var(--background-color);
+}
+
+.notFound {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 150px 20px;
+  text-align: center;
+  
+  h1 {
+    font-size: 48px;
+    font-family: 'Cormorant Garamond', serif;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+}
+
+.catalogLink {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: var(--white);
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  border-radius: 16px;
+  font-size: 24px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background-color: var(--text-color);
+    color: var(--white);
+  }
+} 
