@@ -1,8 +1,8 @@
 module.exports = {
   apps: [
     {
-      name: 'samosik-online',
-      script: 'npm',
+      name: 'ceramica',
+      script: 'node_modules/next/dist/bin/next',
       args: 'start',
       env: {
         NODE_ENV: 'production',
